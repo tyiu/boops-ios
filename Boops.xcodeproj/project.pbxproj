@@ -14,6 +14,8 @@
 		3AE548CA2BAA73610091A8C4 /* BoopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE548C92BAA73610091A8C4 /* BoopsTests.swift */; };
 		3AE548D42BAA73610091A8C4 /* BoopsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE548D32BAA73610091A8C4 /* BoopsUITests.swift */; };
 		3AE548D62BAA73610091A8C4 /* BoopsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE548D52BAA73610091A8C4 /* BoopsUITestsLaunchTests.swift */; };
+		3AE548E42BAA737F0091A8C4 /* NostrSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE548E32BAA737F0091A8C4 /* NostrSDK */; };
+		3AE548E62BAA788F0091A8C4 /* FollowListFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE548E52BAA788F0091A8C4 /* FollowListFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		3AE548CF2BAA73610091A8C4 /* BoopsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoopsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE548D32BAA73610091A8C4 /* BoopsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoopsUITests.swift; sourceTree = "<group>"; };
 		3AE548D52BAA73610091A8C4 /* BoopsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoopsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AE548E52BAA788F0091A8C4 /* FollowListFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE548E42BAA737F0091A8C4 /* NostrSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 				3AE548BB2BAA73610091A8C4 /* Assets.xcassets */,
 				3AE548BD2BAA73610091A8C4 /* Boops.entitlements */,
 				3AE548BE2BAA73610091A8C4 /* Preview Content */,
+				3AE548E52BAA788F0091A8C4 /* FollowListFetcher.swift */,
 			);
 			path = Boops;
 			sourceTree = "<group>";
@@ -145,6 +150,9 @@
 			dependencies = (
 			);
 			name = Boops;
+			packageProductDependencies = (
+				3AE548E32BAA737F0091A8C4 /* NostrSDK */,
+			);
 			productName = Boops;
 			productReference = 3AE548B42BAA73600091A8C4 /* Boops.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 3AE548AB2BAA73600091A8C4;
+			packageReferences = (
+				3AE548E22BAA737F0091A8C4 /* XCRemoteSwiftPackageReference "nostr-sdk-ios" */,
+			);
 			productRefGroup = 3AE548B52BAA73600091A8C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE548BA2BAA73600091A8C4 /* ContentView.swift in Sources */,
+				3AE548E62BAA788F0091A8C4 /* FollowListFetcher.swift in Sources */,
 				3AE548B82BAA73600091A8C4 /* BoopsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,10 +444,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.tyiu.Boops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -468,10 +480,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.tyiu.Boops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -609,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AE548E22BAA737F0091A8C4 /* XCRemoteSwiftPackageReference "nostr-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nostr-sdk/nostr-sdk-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AE548E32BAA737F0091A8C4 /* NostrSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AE548E22BAA737F0091A8C4 /* XCRemoteSwiftPackageReference "nostr-sdk-ios" */;
+			productName = NostrSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AE548AC2BAA73600091A8C4 /* Project object */;
 }

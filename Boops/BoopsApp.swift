@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import NostrSDK
 
 @main
 struct BoopsApp: App {
+    @StateObject var followListFetcher = FollowListFetcher()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(followListFetcher)
         }
     }
 }
