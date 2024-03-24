@@ -15,7 +15,7 @@
 		3AE548D42BAA73610091A8C4 /* BoopsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE548D32BAA73610091A8C4 /* BoopsUITests.swift */; };
 		3AE548D62BAA73610091A8C4 /* BoopsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE548D52BAA73610091A8C4 /* BoopsUITestsLaunchTests.swift */; };
 		3AE548E42BAA737F0091A8C4 /* NostrSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE548E32BAA737F0091A8C4 /* NostrSDK */; };
-		3AE548E62BAA788F0091A8C4 /* FollowListFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE548E52BAA788F0091A8C4 /* FollowListFetcher.swift */; };
+		3AE548E62BAA788F0091A8C4 /* NostrEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE548E52BAA788F0091A8C4 /* NostrEventManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		3AE548CF2BAA73610091A8C4 /* BoopsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoopsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE548D32BAA73610091A8C4 /* BoopsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoopsUITests.swift; sourceTree = "<group>"; };
 		3AE548D52BAA73610091A8C4 /* BoopsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoopsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3AE548E52BAA788F0091A8C4 /* FollowListFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListFetcher.swift; sourceTree = "<group>"; };
+		3AE548E52BAA788F0091A8C4 /* NostrEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostrEventManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 				3AE548BB2BAA73610091A8C4 /* Assets.xcassets */,
 				3AE548BD2BAA73610091A8C4 /* Boops.entitlements */,
 				3AE548BE2BAA73610091A8C4 /* Preview Content */,
-				3AE548E52BAA788F0091A8C4 /* FollowListFetcher.swift */,
+				3AE548E52BAA788F0091A8C4 /* NostrEventManager.swift */,
 			);
 			path = Boops;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE548BA2BAA73600091A8C4 /* ContentView.swift in Sources */,
-				3AE548E62BAA788F0091A8C4 /* FollowListFetcher.swift in Sources */,
+				3AE548E62BAA788F0091A8C4 /* NostrEventManager.swift in Sources */,
 				3AE548B82BAA73600091A8C4 /* BoopsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Boops/Preview Content\"";
+				DEVELOPMENT_TEAM = S99A5B637C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -468,6 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Boops/Preview Content\"";
+				DEVELOPMENT_TEAM = S99A5B637C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

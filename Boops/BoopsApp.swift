@@ -10,7 +10,7 @@ import NostrSDK
 
 @main
 struct BoopsApp: App {
-    @StateObject var followListFetcher = FollowListFetcher()
+    @StateObject var followListFetcher = NostrEventManager()
 
     var body: some Scene {
         WindowGroup {
